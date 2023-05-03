@@ -1,0 +1,94 @@
+.notification {
+	box-sizing: content-box;
+	position: relative;
+	padding: 15px;
+	border-radius: 7px;
+	backdrop-filter: blur(10px);
+	width: 300px;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	overflow: hidden;
+}
+
+.notification img {
+	height: 1.2rem;
+}
+
+.notification p {
+	font-size: 0.6rem;
+	font-weight: 600;
+}
+
+.notification.alert {
+	background-color: #2a83c3;
+}
+
+.notification.error .notification-progress-line {
+	background-color: #083555;
+}
+
+.notification.alert * {
+	color: #083555;
+}
+
+.notification.success {
+	background-color: #ace890;
+}
+
+.notification.error .notification-progress-line {
+	background-color: #225c07;
+}
+
+.notification.success * {
+	color: #225c07;
+}
+
+.notification.error {
+	background-color: #da7c72;
+}
+
+.notification.error .notification-progress-line {
+	background-color: #6b0b00;
+}
+
+.notification.error * {
+	color: #6b0b00;
+}
+
+.notification-container {
+	position: fixed;
+	top: 70px;
+	right: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	z-index: 100;
+}
+
+.notification-progress-line {
+	transition: all 500ms;
+	border-radius: 0 0 20px 0;
+	position: absolute;
+	bottom: -2px;
+	right: -2px;
+	height: 5px;
+}
+
+@keyframes outro-animation {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes intro-animation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

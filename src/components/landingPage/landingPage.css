@@ -1,0 +1,499 @@
+/*
+Stilizacija nav#landing-page-menubara i footera
+*/
+
+nav#landing-page-menu {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	display: flex;
+	gap: 2em;
+	align-items: center;
+	justify-content: center;
+	padding: 0 30px;
+	width: 100%;
+	height: 60px;
+	background-color: #4bc0c033;
+	backdrop-filter: blur(10px);
+	border-bottom: 2px solid #ffffffb0;
+}
+
+nav#landing-page-menu img {
+	height: 70%;
+}
+
+nav#landing-page-menu a {
+	font-weight: 600;
+	font-size: 0.7rem;
+}
+
+nav#landing-page-menu a:last-of-type {
+	margin-left: auto;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+	margin-top: 60px;
+	background-color: #4bc0c0a3;
+	position: relative;
+
+	border-top: 2px solid #00ffffa3;
+}
+
+footer div {
+	font-size: 0.6rem;
+	display: flex;
+	align-items: center;
+}
+
+footer img {
+	height: 2em;
+	margin: 0 1em;
+	cursor: pointer;
+	transition: all 250ms;
+}
+
+footer img:hover {
+	transform: scale(1.5);
+}
+
+/*
+//////////////////////////////////////////////////////////
+Stilizacija glavnog dijela stranice
+*/
+
+.main-background {
+	width: 100%;
+	padding: 1rem 50px;
+	background: linear-gradient(180deg, #2dc590 0%, #0096ff 100%);
+}
+
+.main-vector {
+	width: 100%;
+	margin: -20px 0;
+}
+
+.main-vector:first-of-type {
+	margin-top: unset;
+}
+
+main.landing-page {
+	width: 100%;
+	padding-top: 70px;
+}
+
+.site-tab,
+.main-tab.site-tab,
+.main-background.site-tab,
+.account-activation {
+	width: min(100%, 1440px);
+}
+
+.main-background,
+main.landing-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-tab {
+	width: 100%;
+	height: max-content;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-tab .main-container {
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.main-tab svg,
+.register-div svg {
+	margin-right: 30px;
+	width: 40%;
+	height: min-content;
+	filter: drop-shadow(0 0 100px #5cffc673);
+}
+
+.main-tab div:first-of-type {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.main-tab h1 {
+	display: flex;
+	flex-direction: column;
+	font-weight: 600;
+	font-size: 1.7rem;
+	line-height: 1em;
+}
+
+.main-tab h1 span {
+	padding: 7px 0;
+	transition: all 250ms;
+	background: linear-gradient(90deg, #4bc0c09f, #00fafa, #4bc0c09f) 0 0 / 200%
+		100%;
+	color: transparent;
+	background-clip: text;
+}
+
+@keyframes change-color {
+	to {
+		background-position: 200% 0;
+	}
+}
+
+.main-tab p {
+	font-weight: 500;
+	font-size: 0.7rem;
+}
+
+.button-container button {
+	cursor: pointer;
+	position: relative;
+	border-radius: 8px;
+	background-color: #181921;
+	width: max-content;
+	padding: 0.7em 1.7em;
+	font-weight: 600;
+	font-size: 0.7rem;
+}
+
+.button-container {
+	cursor: pointer;
+	padding: 3px;
+	width: min-content;
+	border-radius: 11px;
+	background: linear-gradient(90.18deg, #4bc0c0 0%, #4bc0c067 100%);
+}
+
+.button-container:hover button {
+	background-color: transparent;
+}
+
+#form-submit-button {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+#form-submit-button:disabled {
+	cursor: progress;
+}
+
+#form-submit-button:disabled .text {
+	display: none;
+}
+
+#form-submit-button:disabled .loader-dot {
+	display: inline-block;
+}
+
+.loader-dot {
+	width: 1rem;
+	height: 1rem;
+	background: #fff;
+	border-radius: 50%;
+	animation: animloader 1s ease-in infinite;
+	display: none;
+}
+
+@keyframes animloader {
+	0% {
+		transform: scale(0);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+/*
+//////////////////////////////////////////////////////////
+Stilizacija odjeljka s uslugama
+*/
+
+main.landing-page h2 {
+	scroll-margin: 60px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-weight: 800;
+	font-size: 2rem;
+	color: #fff;
+	text-shadow: 0px 4px 60px rgba(0, 150, 255, 0.5);
+}
+
+.tab-services {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tab-services:nth-of-type(2) {
+	margin: -50px 0;
+}
+
+.tab-services:nth-of-type(2n + 1) {
+	flex-direction: row-reverse;
+}
+
+.tab-services svg {
+	width: 40%;
+	filter: drop-shadow(0 0 100px #0095ff73);
+}
+
+.tab-services:nth-of-type(2n + 1) svg {
+	filter: drop-shadow(0 0 100px #5cffc673);
+}
+
+.tab-services:nth-of-type(2n) .info * {
+	margin-left: 20%;
+}
+
+.tab-services .info {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.tab-services h3 {
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+.tab-services p {
+	font-size: 0.7rem;
+	font-weight: 600;
+	width: 80%;
+	color: #fff;
+}
+
+.site-tab {
+	padding: 0 1rem;
+}
+
+/*
+Aktivanica korisnika - Upute
+*/
+
+.account-activation {
+	margin-top: 200px;
+	padding: 0 40px;
+}
+
+.account-activation :is(p) {
+	font-size: 0.7rem;
+	font-weight: 500;
+	width: 80%;
+	color: #fff;
+}
+
+.account-activation {
+	padding: 40px;
+}
+
+.account-activation .links {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+}
+
+.account-activation .links p {
+	font-size: 0.8rem;
+	width: max-content;
+}
+
+.account-activation .links a {
+	color: #b6dcdc;
+	font-size: 1em;
+	font-weight: 800;
+	text-decoration: underline wavy;
+
+	text-underline-offset: 4px;
+}
+
+.account-activation .links a {
+	transition: all 250ms;
+	color: #2dc590;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.account-activation .links a:hover {
+	background: linear-gradient(90deg, #4bc0c09f, #00fafa, #4bc0c09f) 0 0 / 200%
+		100%;
+	color: transparent;
+	background-clip: text;
+	animation: change-color 2s infinite forwards;
+}
+
+.account-activation:last-of-type .tab-services {
+	flex-direction: row;
+	gap: 50px;
+}
+/*///////////////////////////////////////////////////////////
+Prilagodba raznim ekranima
+*/
+
+@media only screen and (max-width: 1000px) {
+	main.landing-page h2 {
+		margin: 25px 0;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.main-tab svg {
+		width: 50%;
+		margin: 0;
+	}
+
+	.tab-services,
+	.account-activation:last-of-type .tab-services {
+		margin: 50px 0;
+		gap: 2rem;
+	}
+
+	.tab-services:nth-of-type(2) {
+		margin: 100px 0;
+	}
+
+	.tab-services:nth-of-type(3) {
+		margin: 20px 0;
+	}
+
+	.auth-form,
+	.tab-services.register-div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.register-div svg {
+		width: 80%;
+	}
+
+	.tab-services .auth-form {
+		width: 100%;
+	}
+
+	footer {
+		height: max-content;
+		padding: 20px;
+	}
+
+	footer div {
+		flex-direction: column;
+		gap: 10px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.main-tab {
+		padding: 50px 0;
+		margin-bottom: 50px;
+	}
+
+	.main-tab .main-container {
+		margin-top: 50px;
+		margin-left: 0;
+	}
+
+	.main-tab,
+	.tab-services.register-div {
+		flex-direction: column;
+	}
+
+	.main-tab svg {
+		width: 100%;
+	}
+
+	.main-tab svg,
+	.tab-services svg {
+		margin-top: 50px;
+	}
+
+	.site-tab {
+		padding: 0 20px;
+	}
+
+	.tab-services:nth-of-type(2) {
+		margin: 60px 0;
+	}
+
+	.tab-services:nth-of-type(2n) .info * {
+		margin-left: 0;
+	}
+
+	.tab-services,
+	.account-activation:last-of-type .tab-services {
+		display: grid;
+		grid-template-columns: 40% 60%;
+		column-gap: 2rem;
+	}
+
+	.tab-services .info,
+	.tab-services svg {
+		width: 100%;
+		transform: scale(1);
+	}
+	.register-div svg {
+		width: 60%;
+	}
+
+	.tab-services,
+	.account-activation:last-of-type .tab-services,
+	.tab-services:nth-of-type(2n + 1) {
+		display: flex;
+		gap: 2rem;
+		flex-direction: column-reverse;
+	}
+
+	.tab-services p {
+		width: 100%;
+	}
+
+	.tab-services:last-of-type svg {
+		margin: 20px;
+	}
+
+	.tab-services svg {
+		width: min(300px, 80%);
+	}
+
+	main.landing-page {
+		padding-top: 50px;
+	}
+
+	.main-container {
+		margin-left: 0;
+	}
+
+	main.landing-page .tab-services h3 {
+		width: max-content;
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	main.landing-page h2 {
+		font-size: 1.5rem;
+	}
+
+	.main-background {
+		width: 100%;
+		padding: 1rem 20px;
+	}
+
+	footer {
+		margin-top: 0;
+	}
+}

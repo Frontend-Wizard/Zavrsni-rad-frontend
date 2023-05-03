@@ -1,0 +1,15 @@
+{
+	"short_name": "INA TECH",
+	"name": "INA tech pod pokroviteljstvom INA Grupe",
+	"icons": [
+		{
+			"src": "INA_logo.png",
+			"type": "image/png",
+			"sizes": "1141x1141"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#223a40",
+	"background_color": "#181921"
+}

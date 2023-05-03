@@ -1,0 +1,135 @@
+svg#freepik_stories-computer-troubleshooting:not(.animated) .animable {
+	opacity: 0;
+}
+svg#freepik_stories-computer-troubleshooting.animated
+	#freepik--Floor--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+	animation-delay: 0s;
+}
+svg#freepik_stories-computer-troubleshooting.animated
+	#freepik--Shadows--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+	animation-delay: 0s;
+}
+svg#freepik_stories-computer-troubleshooting.animated
+	#freepik--gears-2--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+	animation-delay: 0s;
+}
+svg#freepik_stories-computer-troubleshooting.animated
+	#freepik--Barrier--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+	animation-delay: 0s;
+}
+svg#freepik_stories-computer-troubleshooting.animated
+	#freepik--Device--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
+	animation-delay: 0s;
+}
+svg#freepik_stories-computer-troubleshooting.animated
+	#freepik--gears-1--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
+	animation-delay: 0s;
+}
+svg#freepik_stories-computer-troubleshooting.animated
+	#freepik--speech-bubble-2--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp,
+		1.5s Infinite linear floating;
+	animation-delay: 0s, 1s;
+}
+svg#freepik_stories-computer-troubleshooting.animated
+	#freepik--speech-bubble-1--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn,
+		1.5s Infinite linear floating;
+	animation-delay: 0s, 1s;
+}
+svg#freepik_stories-computer-troubleshooting.animated
+	#freepik--Screwdriver--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomOut,
+		1.5s Infinite linear wind;
+	animation-delay: 0s, 1s;
+}
+svg#freepik_stories-computer-troubleshooting.animated
+	#freepik--Character--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+	animation-delay: 0s;
+}
+svg#freepik_stories-computer-troubleshooting.animated #freepik--Cone--inject-2 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+	animation-delay: 0s;
+}
+@keyframes slideRight {
+	0% {
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes zoomIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	100% {
+		opacity: 1;
+		transform: inherit;
+	}
+}
+@keyframes floating {
+	0% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@keyframes zoomOut {
+	0% {
+		opacity: 0;
+		transform: scale(1.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes wind {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(1deg);
+	}
+	75% {
+		transform: rotate(-1deg);
+	}
+}
+.animator-hidden {
+	display: none;
+}

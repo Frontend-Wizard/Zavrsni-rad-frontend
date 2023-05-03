@@ -1,0 +1,135 @@
+svg#freepik_stories-404-error-with-a-landscape:not(.animated) .animable {
+	opacity: 0;
+}
+svg#freepik_stories-404-error-with-a-landscape.animated
+	#freepik--Clouds--inject-6 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedRight;
+	animation-delay: 0s;
+}
+svg#freepik_stories-404-error-with-a-landscape.animated
+	#freepik--Moon--inject-6 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown,
+		1.5s Infinite linear floating;
+	animation-delay: 0s, 1s;
+}
+svg#freepik_stories-404-error-with-a-landscape.animated
+	#freepik--Stars--inject-6 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+	animation-delay: 0s;
+}
+svg#freepik_stories-404-error-with-a-landscape.animated
+	#freepik--trees-1--inject-6 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
+	animation-delay: 0s;
+}
+svg#freepik_stories-404-error-with-a-landscape.animated
+	#freepik--Shadow--inject-6 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn,
+		3s Infinite linear shake;
+	animation-delay: 0s, 1s;
+}
+svg#freepik_stories-404-error-with-a-landscape.animated
+	#freepik--Numbers--inject-6 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn,
+		3s Infinite linear shake;
+	animation-delay: 0s, 1s;
+}
+svg#freepik_stories-404-error-with-a-landscape.animated
+	#freepik--Rocks--inject-6 {
+	animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+	animation-delay: 0s;
+}
+@keyframes lightSpeedRight {
+	from {
+		transform: translate3d(50%, 0, 0) skewX(-20deg);
+		opacity: 0;
+	}
+	60% {
+		transform: skewX(10deg);
+		opacity: 1;
+	}
+	80% {
+		transform: skewX(-2deg);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes slideDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes floating {
+	0% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	100% {
+		opacity: 1;
+		transform: inherit;
+	}
+}
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+@keyframes lightSpeedLeft {
+	from {
+		transform: translate3d(-50%, 0, 0) skewX(20deg);
+		opacity: 0;
+	}
+	60% {
+		transform: skewX(-10deg);
+		opacity: 1;
+	}
+	80% {
+		transform: skewX(2deg);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}

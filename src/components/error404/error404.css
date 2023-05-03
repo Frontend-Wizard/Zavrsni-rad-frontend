@@ -1,0 +1,59 @@
+main#error404 {
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 50% 1fr;
+	place-items: center;
+	gap: 20px;
+}
+
+main#error404 svg {
+	max-width: 100%;
+	max-height: 80%;
+}
+
+main#error404 .main-content {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+main#error404 h1 {
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+main#error404 button {
+	border: 2px solid transparent;
+	border-radius: 15px;
+	padding: 1em;
+	font-size: 0.7rem;
+	font-weight: 600;
+	background-color: rgba(0, 150, 255, 0.5);
+	width: max-content;
+	transition: all 500ms;
+	cursor: pointer;
+}
+
+main#error404 button:hover {
+	border-color: #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+	main#error404 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	main#error404 svg {
+		height: 40vh;
+	}
+
+	main#error404 .main-content {
+		text-align: center;
+		align-items: center;
+	}
+}

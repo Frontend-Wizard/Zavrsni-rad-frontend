@@ -1,0 +1,42 @@
+:root {
+	font-size: 23px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	font-family: "Montserrat";
+	font-style: normal;
+	color: #ffffff;
+	scroll-behavior: smooth;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+	height: 100%;
+}
+html,
+body,
+#root,
+.dashboard-container,
+.main-dashboard-container {
+	min-width: 370px !important;
+}
+
+body {
+	background-color: #181921;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+	transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+input[data-autocompleted] {
+	background-color: transparent !important;
+}
