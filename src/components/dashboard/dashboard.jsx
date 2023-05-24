@@ -1020,7 +1020,7 @@ function CreateNewUser({
 					.replace(/đ/gi, "d");
 			str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1).toLowerCase();
 		}
-		return str.join("");
+		return str.join(filter ? "" : " ");
 	}
 
 	const handleSubmit = (e) => {
