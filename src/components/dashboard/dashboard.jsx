@@ -1009,15 +1009,15 @@ function CreateNewUser({
 		updateEmail();
 	}, [data.name, data.lastName]);
 
-	function localize(str = "") {
+	function localize(str = "", filter = true) {
 		str = str.split(" ");
 		for (let i = 0; i < str.length; i++) {
-			str[i] = str[i].toLowerCase();
-			str[i] = str[i]
-				.replace(/š/g, "s")
-				.replace(/([čć])/g, "c")
-				.replace(/ž/g, "z")
-				.replace(/đ/g, "d");
+			if (filter)
+				str[i] = str[i]
+					.replace(/š/gi, "s")
+					.replace(/([čć])/gi, "c")
+					.replace(/ž/gi, "z")
+					.replace(/đ/gi, "d");
 			str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1).toLowerCase();
 		}
 		return str.join("");
@@ -1028,8 +1028,8 @@ function CreateNewUser({
 		updateData((old) => {
 			return {
 				...old,
-				name: localize(old.name),
-				lastName: localize(old.lastName),
+				name: localize(old.name, false),
+				lastName: localize(old.lastName, false),
 			};
 		});
 		let valid = error.findIndex((el) => el === false) === -1;
@@ -1853,7 +1853,7 @@ function CreateNewComputer({
 			  }
 	);
 	const [check, updateCheck] = useState(false);
-	const [finished, updateFinished] = useState( 0);
+	const [finished, updateFinished] = useState(0);
 	const [monthsYear, updateMonthsYear] = useState([], []);
 
 	useEffect(() => {
