@@ -3,8 +3,8 @@
 	"version": "0.1.0",
 	"private": true,
 	"engines": {
-		"node": "v20.1.0",
-		"npm": "9.6.4"
+		"node": "v20.2.0",
+		"npm": "9.6.6"
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.9.5",
@@ -17,7 +17,7 @@
 		"react-chartjs-2": "^5.2.0",
 		"react-dom": "^18.2.0",
 		"react-redux": "^8.0.7",
-		"react-router-dom": "^6.11.2",
+		"react-router-dom": "^6.12.0",
 		"react-scripts": "^5.0.1",
 		"web-vitals": "^3.3.2"
 	},

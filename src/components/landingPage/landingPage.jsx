@@ -90,7 +90,6 @@ function Main() {
 								text: "Vršimo dijagnostiku kvara na računalu, te potom otklanjane samoga kvara. Trudimo se da podatci korisnika ostanu očuvani, ako je to moguće.",
 								svg: <DiagnoseSvg />,
 							},
-
 							{
 								heading: "Backup podataka",
 								text: "Nudimo profesionalnu uslugu backupa vaših podataka. U slučaju prestanka radu HDD/SSD/USB uređaja u mogučnosti smo vratiti sve podatke koji se nalaze na tom uređaju.",
